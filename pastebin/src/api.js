@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL = import.meta.env.VITE_API_URL;
 
 export const createPaste = async (data) => {
   const res = await fetch(`${BACKEND_URL}/api/pastes`, {
