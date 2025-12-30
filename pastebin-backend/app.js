@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 /* API ROUTES */
-app.use("/api/healthz", healthRoute);
+app.use("/api/health", healthRoute);
 app.use("/api/pastes", pasteRoutes);
 
 /* HTML VIEW ROUTE (MANDATORY BY ASSIGNMENT) */
